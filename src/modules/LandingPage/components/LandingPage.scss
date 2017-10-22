@@ -1,19 +1,9 @@
 .LandingPage__Component {
-
-  .github-banner {
-    position: absolute;
-    top: 0;
-    right: 0;
-    border: 0;
-  }
+  margin-top: 100px;
 
   h1 {
     font-weight: 300;
     text-align: center;
     font-size: 32px;
-
-    span {
-      color: green;
-    }
   }
 }
