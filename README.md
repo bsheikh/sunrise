@@ -1,12 +1,16 @@
 <h1 align="center">Sunrise</h1>
 
 <p align="center">
-    ![sunrise](https://user-images.githubusercontent.com/7809061/31867413-59908d30-b75d-11e7-805b-8d658df72ecb.png)
+  <img src="https://user-images.githubusercontent.com/7809061/31867413-59908d30-b75d-11e7-805b-8d658df72ecb.png" alt="Sunrise Logo" height="130">
 </p>
 
 <p align="center">
-  [![Open Source Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](https://github.com/bsheikh/sunrise/blob/master/LICENSE/)
-  [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
+  <a href="https://github.com/bsheikh/sunrise/blob/master/LICENSE/">
+    <img src="https://badges.frapsoft.com/os/mit/mit.svg?v=102" alt="MIT License">
+  </a>
+  <a href="https://github.com/bsheikh/sunrise/pulls">
+    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="pull-requests">
+  </a>
 </p>
 
 
@@ -14,18 +18,19 @@
 1. [Requirements](#requirements)
 1. [Getting Started](#getting-started)
 1. [Browser Support](#browser-support)
-1. [TODO](#todo)
 
 ## Requirements
 * node `^4.5.0`
 * yarn `^0.17.0`
 
 ## Getting Started
-1. `git clone https://github.com/bsheikh/sunrise.git`
-2. `cd sunrise`
-3. `yarn install`
-4. `yarn run dev:sandbox`
-5. Verify at `localhost:4000`
+
+```bash
+$ git clone git clone https://github.com/bsheikh/sunrise.git <project-name>
+$ cd <project-name>
+$ yarn install
+$ yarn run dev:sandbox
+```
 
 ## Browser Support
 * Chrome
