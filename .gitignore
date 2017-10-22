@@ -1,0 +1,10 @@
+.DS_STORE
+*.log
+*.tgz
+
+node_modules
+dist
+lib
+coverage
+
+.idea/
