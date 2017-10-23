@@ -1,7 +1,5 @@
-<h1 align="center">Sunrise</h1>
-
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/7809061/31867413-59908d30-b75d-11e7-805b-8d658df72ecb.png" alt="Sunrise Logo" height="130">
+  <img src="https://user-images.githubusercontent.com/7809061/31871004-28eeb018-b77f-11e7-8b4d-a2ff6cbb6ded.png" alt="Sunrise Logo" height="250">
 </p>
 
 <p align="center">
