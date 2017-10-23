@@ -16,7 +16,6 @@
 
 ## Table of Contents
 1. [Getting Started](#getting-started)
-1. [Available Scripts](#scripts)
 1. [Browser Support](#browser-support)
 
 ## Getting Started
@@ -28,24 +27,6 @@ $ yarn install
 $ yarn run dev:sandbox
 Server is now running at http://localhost:4000.
 ```
-
-## Available Scripts
-
-|`yarn run <script>`|Description|
-|------------------|-----------|
-|`dev`|Serves app at `localhost:4000`. HMR will be enabled.|
-|`dev:sandbox`|Same as `dev` but overrides `NODE_ENV` to "sandbox".|
-|`dev:quality`|Same as `dev` but overrides `NODE_ENV` to "quality".|
-|`dev:prod`|Same as `dev` but overrides `NODE_ENV` to "production".|
-|`deploy`|Runs linter, tests, and then, on success, compiles application to /disk.|
-|`deploy:dev`|Same as `deploy` but overrides `NODE_ENV` to "development".|
-|`deploy:sandbox`|Same as `deploy` but overrides `NODE_ENV` to "sandbox".|
-|`deploy:quality`|Same as `deploy` but overrides `NODE_ENV` to "quality".|
-|`deploy:prod`|Same as `deploy` but overrides `NODE_ENV` to "production".|
-|`test`|Runs tests with jest. Options can be passed in by `-- --[option]`.|
-|`lint:style`| Lints all `.{scss,css}` files.|
-|`lint:code`| Lints all `.{jsx,js}` files.|
-|`lint-fix:code`| Fixes all possible lint issues within `.{jsx,js}` files.|
 
 ## Browser Support
 * Chrome
