@@ -3,6 +3,9 @@
 </p>
 
 <p align="center">
+  <a herf="https://github.com/bsheikh/sunrise">
+    <img src="https://img.shields.io/badge/v-0.0.1--beta-blue.svg" alt="version" />
+  </a>
   <a href="https://github.com/bsheikh/sunrise/blob/master/LICENSE/">
     <img src="https://badges.frapsoft.com/os/mit/mit.svg?v=102" alt="MIT License">
   </a>
@@ -12,9 +15,31 @@
 </p>
 
 
+
+##### Project Details
+Creating a new project is time consuming. As developers, we spend more time bootstrapping projects instead of adding functionality. Sunrise is tackling this problem by helping developers easily get up and running without worrying about the build configuration.
+
+
 ## Table of Contents
+1. [Requirements](#requirements)
 1. [Getting Started](#getting-started)
-1. [Browser Support](#browser-support)
+1. [Supported Browsers](#supported-browser)
+1. [React](#react)
+1. [Redux-Saga](#redux-saga)
+1. [React-Router](#react-router)
+1. [Re-Select](#re-select)
+1. [React-Intl](#react-intl)
+1. [Jest](#jest)
+1. [Redux DevTools](#redux-devtools)
+1. [License](#License)
+
+## Requirements
+
+* [![node)](https://img.shields.io/badge/node-%3E%3D4.5.0-brightgreen.svg)]()
+
+* [![yarn)](https://img.shields.io/badge/yarn-%3E%3D0.20.3-brightgreen.svg)]()
+
+* [![npm)](https://img.shields.io/badge/npm-%3E%3D3.0.0-brightgreen.svg)]()
 
 ## Getting Started
 
@@ -26,7 +51,7 @@ $ yarn run dev:sandbox
 Server is now running at http://localhost:4000.
 ```
 
-## Browser Support
+## Supported Browsers
 * Chrome
 * Mozilla
 * Safari
