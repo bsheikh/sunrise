@@ -4,9 +4,9 @@
 
 <p align="center">
   <a herf="https://github.com/bsheikh/sunrise">
-    <img src="https://img.shields.io/badge/v-0.0.1--beta-blue.svg" alt="version" />
+    <img src="https://img.shields.io/badge/v-0.0.1--beta-blue.svg" alt="version">
   </a>
-  <a href="https://github.com/bsheikh/sunrise/blob/master/LICENSE/">
+  <a href="https://github.com/bsheikh/sunrise/blob/master/LICENSE">
     <img src="https://badges.frapsoft.com/os/mit/mit.svg?v=102" alt="MIT License">
   </a>
   <a href="https://github.com/bsheikh/sunrise/pulls">
@@ -16,7 +16,7 @@
 
 
 
-##### Project Details
+## Project Details
 Creating a new project is time consuming. As developers, we spend more time bootstrapping projects instead of adding functionality. Sunrise is tackling this problem by helping developers easily get up and running without worrying about the build configuration.
 
 
