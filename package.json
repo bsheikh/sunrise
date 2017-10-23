@@ -31,7 +31,6 @@
     "deploy:sandbox": "better-npm-run deploy:sandbox",
     "deploy:quality": "better-npm-run deploy:quality",
     "deploy:prod": "better-npm-run deploy:prod",
-    "deploy:package": "better-npm-run deploy:package",
     "lint-staged": "lint-staged"
   },
   "lint-staged": {
@@ -108,13 +107,6 @@
     },
     "deploy:prod": {
       "command": "npm run deploy",
-      "env": {
-        "NODE_ENV": "production",
-        "DEBUG": "app:*"
-      }
-    },
-    "deploy:package": {
-      "command": "npm run deploy && npm run compile:babel && npm publish",
       "env": {
         "NODE_ENV": "production",
         "DEBUG": "app:*"
