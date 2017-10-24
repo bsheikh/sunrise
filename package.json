@@ -39,7 +39,7 @@
   },
   "betterScripts": {
     "compile": {
-      "command": "node bin/compile",
+      "command": "node build/scripts/compile",
       "env": {
         "DEBUG": "app:*"
       }
@@ -51,28 +51,28 @@
       }
     },
     "dev": {
-      "command": "nodemon bin/dev-server --ignore dist --ignore coverage --ignore src",
+      "command": "nodemon build/scripts/dev-server --ignore dist --ignore coverage --ignore src",
       "env": {
         "NODE_ENV": "development",
         "DEBUG": "app:*"
       }
     },
     "dev:sandbox": {
-      "command": "nodemon bin/dev-server --ignore dist --ignore coverage --ignore src",
+      "command": "nodemon build/scripts/dev-server --ignore dist --ignore coverage --ignore src",
       "env": {
         "NODE_ENV": "sandbox",
         "DEBUG": "app:*"
       }
     },
     "dev:quality": {
-      "command": "nodemon bin/dev-server --ignore dist --ignore coverage --ignore src",
+      "command": "nodemon build/scripts/dev-server --ignore dist --ignore coverage --ignore src",
       "env": {
         "NODE_ENV": "quality",
         "DEBUG": "app:*"
       }
     },
     "dev:prod": {
-      "command": "nodemon bin/dev-server --ignore dist --ignore coverage --ignore src",
+      "command": "nodemon build/scripts/dev-server --ignore dist --ignore coverage --ignore src",
       "env": {
         "NODE_ENV": "dev_production",
         "DEBUG": "app:*"
@@ -113,7 +113,7 @@
       }
     },
     "start": {
-      "command": "node bin/dev-server",
+      "command": "node build/scripts/dev-server",
       "env": {
         "NODE_ENV": "development",
         "DEBUG": "app:*"
@@ -129,7 +129,7 @@
   },
   "jest": {
     "setupFiles": [
-      "./config/test/test.config.js"
+      "./build/config/test/test.config.js"
     ],
     "moduleFileExtensions": [
       "js",
@@ -137,7 +137,7 @@
       "json"
     ],
     "moduleNameMapper": {
-      "\\.(scss|jpg|png|svg)$": "<rootDir>/config/test/file.mock.js"
+      "\\.(scss|jpg|png|svg)$": "<rootDir>/build/config/test/file.mock.js"
     },
     "modulePathIgnorePatterns": [
       "/dist/"
