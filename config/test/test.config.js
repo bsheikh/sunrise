@@ -9,12 +9,3 @@ import { mountWithIntl, shallowWithIntl } from 'enzyme-react-intl';
 global.shallow = shallowWithIntl;
 global.render = render;
 global.mount = mountWithIntl;
-
-// Issue with ant.design (https://github.com/akiran/react-slick/issues/742). Will be fixed when ant.design is updated
-window.matchMedia = window.matchMedia || function() {
-  return {
-    matches: false,
-    addListener: () => {},
-    removeListener: () => {}
-  };
-};
