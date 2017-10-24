@@ -1,5 +1,6 @@
 blueprints/**/files/**
 coverage/**
-node_modules/**
 dist/**
+build/**
+node_modules/**
 src/index.html
