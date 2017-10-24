@@ -23,7 +23,7 @@ Creating a new project is time consuming. As developers, we spend more time boot
 ## Table of Contents
 1. [Requirements](#requirements)
 1. [Getting Started](#getting-started)
-1. [Supported Browsers](#supported-browser)
+1. [Supported Browsers](#supported-browsers)
 1. [React](#react)
 1. [Redux-Saga](#redux-saga)
 1. [React-Router](#react-router)
@@ -47,7 +47,7 @@ Creating a new project is time consuming. As developers, we spend more time boot
 $ git clone git clone https://github.com/bsheikh/sunrise.git <project-name>
 $ cd <project-name>
 $ yarn install
-$ yarn run dev:sandbox
+$ yarn run start:dev
 Server is now running at http://localhost:4000.
 ```
 
