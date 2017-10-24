@@ -1,6 +1,6 @@
 {
   "name": "sunrise",
-  "version": "0.0.1",
+  "version": "0.0.1-beta",
   "description": "sunrise",
   "main": "lib/main.js",
   "license": "MIT",
@@ -15,22 +15,21 @@
   },
   "scripts": {
     "clean": "rimraf dist && rimraf lib",
-    "compile": "better-npm-run compile",
-    "compile:babel": "better-npm-run compile:babel",
+    "compile": "node build/scripts/compile",
+    "start": "nodemon build/scripts/dev-server --ignore dist --ignore coverage --ignore src",
+    "start:dev": "better-npm-run start:dev",
+    "start:quality": "better-npm-run start:quality",
+    "start:sandbox": "better-npm-run start:sandbox",
+    "start:prod": "better-npm-run start:prod",
+    "deploy": "npm run lint:style && npm run lint:code && npm run test && npm run clean && npm run compile",
+    "deploy:dev": "better-npm-run deploy:dev",
+    "deploy:quality": "better-npm-run deploy:quality",
+    "deploy:sandbox": "better-npm-run deploy:sandbox",
+    "deploy:prod": "better-npm-run deploy:prod",
     "lint:style": "stylelint \"src/**/*.{scss,css}\" --syntax scss",
     "lint:code": "eslint src",
     "lint-fix:code": "eslint --fix src",
     "test": "better-npm-run test",
-    "start": "better-npm-run start",
-    "dev": "better-npm-run dev",
-    "dev:sandbox": "better-npm-run dev:sandbox",
-    "dev:quality": "better-npm-run dev:quality",
-    "dev:prod": "better-npm-run dev:prod",
-    "deploy": "better-npm-run deploy",
-    "deploy:dev": "better-npm-run deploy:dev",
-    "deploy:sandbox": "better-npm-run deploy:sandbox",
-    "deploy:quality": "better-npm-run deploy:quality",
-    "deploy:prod": "better-npm-run deploy:prod",
     "lint-staged": "lint-staged"
   },
   "lint-staged": {
@@ -38,49 +37,38 @@
     "src/**/*.{scss,css}": "lint:style"
   },
   "betterScripts": {
-    "compile": {
-      "command": "node build/scripts/compile",
-      "env": {
-        "DEBUG": "app:*"
-      }
-    },
-    "compile:babel": {
-      "command": "./node_modules/.bin/babel --no-babelrc src/ --out-dir lib/ --presets=es2015,react,stage-0 --plugins=transform-runtime,babel-plugin-react-intl,transform-decorators-legacy --ignore='**/*.spec.js','**/*.js.snap' --copy-files",
-      "env": {
-        "DEBUG": "app:*"
-      }
-    },
     "dev": {
-      "command": "nodemon build/scripts/dev-server --ignore dist --ignore coverage --ignore src",
+      "command": "npm run start",
       "env": {
         "NODE_ENV": "development",
         "DEBUG": "app:*"
       }
     },
-    "dev:sandbox": {
-      "command": "nodemon build/scripts/dev-server --ignore dist --ignore coverage --ignore src",
+    "start:dev": {
+      "command": "npm run start",
+      "env": {
+        "NODE_ENV": "development",
+        "DEBUG": "app:*"
+      }
+    },
+    "start:sandbox": {
+      "command": "npm run start",
       "env": {
         "NODE_ENV": "sandbox",
         "DEBUG": "app:*"
       }
     },
-    "dev:quality": {
-      "command": "nodemon build/scripts/dev-server --ignore dist --ignore coverage --ignore src",
+    "start:quality": {
+      "command": "npm run start",
       "env": {
         "NODE_ENV": "quality",
         "DEBUG": "app:*"
       }
     },
-    "dev:prod": {
-      "command": "nodemon build/scripts/dev-server --ignore dist --ignore coverage --ignore src",
+    "start:prod": {
+      "command": "npm run start",
       "env": {
         "NODE_ENV": "dev_production",
-        "DEBUG": "app:*"
-      }
-    },
-    "deploy": {
-      "command": "npm run lint:style && npm run lint:code && npm run test && npm run clean && npm run compile",
-      "env": {
         "DEBUG": "app:*"
       }
     },
@@ -109,13 +97,6 @@
       "command": "npm run deploy",
       "env": {
         "NODE_ENV": "production",
-        "DEBUG": "app:*"
-      }
-    },
-    "start": {
-      "command": "node build/scripts/dev-server",
-      "env": {
-        "NODE_ENV": "development",
         "DEBUG": "app:*"
       }
     },
