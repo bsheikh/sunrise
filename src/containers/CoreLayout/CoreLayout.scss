@@ -5,20 +5,9 @@
     overflow: auto;
     left: inherit;
     height: 100%;
-    box-sizing: border-box;
-    color: rgba(0, 0, 0, .65);
-  }
-
-  .package {
     width: inherit;
     position: inherit;
-  }
-
-  .nav-minimized {
-    margin-left: 60px;
-  }
-
-  .nav-expanded {
-    margin-left: 200px;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, .65);
   }
 }

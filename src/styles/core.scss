@@ -1,40 +1,7 @@
+/*
+Project level & style overrides Go Here
+------------------------------------
+If any project level antd style overrides are required this is where they should go.
+*/
+
 @import 'base';
-
-// If any project level antd style overrides are required this is where they should go.
-
-// -------- Atomic Styles ----------
-
-.sunrise {
-
-  .hide {
-    display: none;
-  }
-
-  .show {
-    display: inherit;
-  }
-
-  .text-align-center {
-    text-align: center;
-  }
-
-  .text-align-right {
-    text-align: right;
-  }
-
-  .w-100 {
-    width: 100%;
-  }
-
-  .m-t-5 {
-    margin-top: 5px;
-  }
-
-  .m-r-16 {
-    margin-right: 16px;
-  }
-
-  button[disabled] {
-    opacity: 0.5;
-  }
-}
