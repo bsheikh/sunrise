@@ -73,8 +73,7 @@ if (__SANDBOX__) {
       setImmediate(() => {
         ReactDOM.unmountComponentAtNode(MOUNT_NODE);
         render();
-      })
-    );
+      }));
   }
 }
 

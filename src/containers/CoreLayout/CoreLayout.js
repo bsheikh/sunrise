@@ -10,7 +10,6 @@ import '../../styles/core.scss';
 import './CoreLayout.scss';
 
 class CoreLayout extends Component {
-
   static propTypes = {
     children: PropTypes.node.isRequired
   }
@@ -21,7 +20,7 @@ class CoreLayout extends Component {
       <LocaleProvider locale={appLocal.antd}>
         <IntlProvider locale={appLocal.reactIntl}>
           <div className="sunrise core__layout">
-            <div className={`app__layout package`}>
+            <div className="app__layout package">
               { this.props.children }
             </div>
           </div>
