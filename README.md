@@ -33,6 +33,9 @@ Creating a new project is time consuming. As developers, we spend more time boot
 1. [Re-Select](#re-select)
 1. [React-Intl](#react-intl)
 1. [Jest](#jest)
+  1. [Running tests](#running-tests)
+  1. [Running tests in `watch` mode](#running-tests-in-watch-mode)
+  1. [Updating snapshots](#updating-snapshots)
 1. [Redux DevTools](#redux-devtools)
 1. [License](#License)
 
@@ -58,11 +61,12 @@ Server is now running at http://localhost:4000.
 `[npm|yarn] run deploy:prod` creates a `dist` directory with a production build of your app. Set HTTP server to serve index.html and the application will load.
 
 ### Static Server
-For environments using Node, the easiest way to handle this would be to install `serve` and let it handle the rest.
+For environments using Node, install `serve` and let it handle the rest.
 ```
 npm install -g serve
 serve -s build
 ```
+More Information: [https://github.com/zeit/serve](https://github.com/zeit/serve)
 
 ### S3 Deploy
 1. Navigate to the S3 service and click `Create Bucket`. Make up a clever name for your new bucket, then click `Create`.
@@ -70,6 +74,28 @@ serve -s build
 1. Add the contents of your `dist` directory to this bucket. This can be done by clicking on the bucket and clicking `Upload`. That’s it! You can find the URL to your application back under the `Static Website Hosting` tab, labeled `Endpoint`.
 1. Open the `Permissions` tab, then select `Edit bucket policy`. Edit bucket policy to allow read-only permissions for anonymous users.
 
+
+## Jest
+Sunrise uses Jest as the test runner. Jest is a Node-based runner in which tests are ran in a node environment instead of a browser environment. This enables fast iteration speed and prevents flakiness.
+
+### Filename Conventions
+Jest will look for test files with any of the following popular naming conventions:
+
+* Files with `.js` suffix in `__tests__` folders.
+* Files with `.test.js` suffix.
+* Files with `.spec.js` suffix.
+
+It's recommend to put the test files (or `__tests__` folders) next to the code they are testing so that relative imports appear shorter.
+
+### Running tests
+```
+$ [npm|yarn] run test
+```
+
+### Running tests in `watch` mode
+```
+$ [npm|yarn] run test -- --watch
+```
 
 ## Supported Browsers
 * Chrome
