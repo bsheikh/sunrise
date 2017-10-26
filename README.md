@@ -21,23 +21,23 @@ Creating a new project is time consuming. As developers, we spend more time boot
 
 
 ## Table of Contents
-1. [Requirements](#requirements)
-2. [Getting Started](#getting-started)
-3. [Deployment](#deployment)
+* [Requirements](#requirements)
+* [Getting Started](#getting-started)
+* [Deployment](#deployment)
   * [Static Server](#static-server)
   * [S3 Deploy)](#s3-deploy)
-4. [Supported Browsers](#supported-browsers)
-5. [React](#react)
-6. [Redux-Saga](#redux-saga)
-7. [React-Router](#react-router)
-8. [Re-Select](#re-select)
-9. [React-Intl](#react-intl)
-10. [Jest](#jest)
+* [Supported Browsers](#supported-browsers)
+* [React](#react)
+* [Redux-Saga](#redux-saga)
+* [React-Router](#react-router)
+* [Re-Select](#re-select)
+* [React-Intl](#react-intl)
+* [Jest](#jest)
   * [Running tests](#running-tests)
   * [Running tests in `watch` mode](#running-tests-in-watch-mode)
   * [Updating snapshots](#updating-snapshots)
-11. [Redux DevTools](#redux-devtools)
-12. [License](#License)
+* [Redux DevTools](#redux-devtools)
+* [License](#License)
 
 ## Requirements
 
