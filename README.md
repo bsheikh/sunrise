@@ -97,6 +97,10 @@ $ [npm|yarn] run test
 $ [npm|yarn] run test -- --watch
 ```
 
+### Updating snapshots
+```
+$ [npm|yarn] run test -- --u
+```
 ## Supported Browsers
 * Chrome
 * Mozilla
