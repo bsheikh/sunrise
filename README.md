@@ -23,6 +23,9 @@ Creating a new project is time consuming. As developers, we spend more time boot
 ## Table of Contents
 1. [Requirements](#requirements)
 1. [Getting Started](#getting-started)
+1. [Deployment](#deployment)
+  1. [Static Server](#static-server)
+  1. [S3 Deploy)](#s3-deploy)
 1. [Supported Browsers](#supported-browsers)
 1. [React](#react)
 1. [Redux-Saga](#redux-saga)
@@ -50,6 +53,23 @@ $ yarn install
 $ yarn run start:dev
 Server is now running at http://localhost:4000.
 ```
+
+## Deployment
+`[npm|yarn] run deploy:prod` creates a `dist` directory with a production build of your app. Set HTTP server to serve index.html and the application will load.
+
+### Static Server
+For environments using Node, the easiest way to handle this would be to install `serve` and let it handle the rest.
+```
+npm install -g serve
+serve -s build
+```
+
+### S3 Deploy
+1. Navigate to the S3 service and click `Create Bucket`. Make up a clever name for your new bucket, then click `Create`.
+1. Click on the newly-created bucket. Within the `Properties`, open the `Static Website Hosting` tab, and select `Enable website hosting`. Fill in `index.html` for both the Index and Error Documents. By setting `index.html` as the Error Document, we can allow something like react-router to handle routes outside of the root.
+1. Add the contents of your `dist` directory to this bucket. This can be done by clicking on the bucket and clicking `Upload`. That’s it! You can find the URL to your application back under the `Static Website Hosting` tab, labeled `Endpoint`.
+1. Open the `Permissions` tab, then select `Edit bucket policy`. Edit bucket policy to allow read-only permissions for anonymous users.
+
 
 ## Supported Browsers
 * Chrome
