@@ -50,7 +50,7 @@ Creating a new project is time consuming. As developers, we spend more time boot
 ## Getting Started
 
 ```bash
-$ git clone git clone https://github.com/bsheikh/sunrise.git <project-name>
+$ git clone https://github.com/bsheikh/sunrise.git <project-name>
 $ cd <project-name>
 $ yarn install
 $ yarn run start:dev
