@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <a herf="https://github.com/bsheikh/sunrise">
+  <a href="https://github.com/bsheikh/sunrise">
     <img src="https://img.shields.io/badge/v-0.0.1--beta-blue.svg" alt="version">
   </a>
   <a href="https://github.com/bsheikh/sunrise/blob/master/LICENSE">
